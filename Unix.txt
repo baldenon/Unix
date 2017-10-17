@@ -1,0 +1,31 @@
+sh-4.4$ /bin/bash                                                                                                                                                                                         
+bash-4.4$ mkdir Sergey                                                                                                                                                                                    
+bash-4.4$ cd Sergey                                                                                                                                                                                       
+bash-4.4$ touch test{A..E}                                                                                                                                                                                
+bash-4.4$ ls -la                                                                                                                                                                                          
+total 8                                                                                                                                                                                                   
+drwxr-xr-x 2 12963 12963 4096 Oct 17 11:25 .                                                                                                                                                              
+drwxrwxrwx 1 cg    cg    4096 Oct 17 11:25 ..                                                                                                                                                             
+-rw-r--r-- 1 12963 12963    0 Oct 17 11:25 testA                                                                                                                                                          
+-rw-r--r-- 1 12963 12963    0 Oct 17 11:25 testB                                                                                                                                                          
+-rw-r--r-- 1 12963 12963    0 Oct 17 11:25 testC                                                                                                                                                          
+-rw-r--r-- 1 12963 12963    0 Oct 17 11:25 testD                                                                                                                                                          
+-rw-r--r-- 1 12963 12963    0 Oct 17 11:25 testE                                                                                                                                                          
+bash-4.4$ date > testA                                                                                                                                                                                    
+bash-4.4$ date > testB                                                                                                                                                                                    
+bash-4.4$ date > testC                                                                                                                                                                                    
+bash-4.4$ date > testD                                                                                                                                                                                    
+bash-4.4$ date > testE                                                                                                                                                                                    
+bash-4.4$ ls -la                                                                                                                                                                                          
+total 28                                                                                                                                                                                                  
+drwxr-xr-x 2 12963 12963 4096 Oct 17 11:25 .                                                                                                                                                              
+drwxrwxrwx 1 cg    cg    4096 Oct 17 11:25 ..                                                                                                                                                             
+-rw-r--r-- 1 12963 12963   29 Oct 17 11:26 testA                                                                                                                                                          
+-rw-r--r-- 1 12963 12963   29 Oct 17 11:26 testB                                                                                                                                                          
+-rw-r--r-- 1 12963 12963   29 Oct 17 11:26 testC                                                                                                                                                          
+-rw-r--r-- 1 12963 12963   29 Oct 17 11:26 testD                                                                                                                                                          
+-rw-r--r-- 1 12963 12963   29 Oct 17 11:26 testE                                                                                                                                                          
+bash-4.4$ grep -ch 2017 test* | wc -l                                                                                                                                                                     
+5                                                                                                                                                                                                         
+bash-4.4$ rm -r "Sergey"                                                                                                                                                                                                               
+bash-4.4$ ls -la
